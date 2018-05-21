@@ -18,4 +18,16 @@ public abstract class Kaiju {
     public void attack(Vehicle vehicle) {
         vehicle.damage(this.attackValue);
     }
+
+    public void damage(int attackValue) {
+        this.healthValue -= attackValue;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public boolean isAlive() {
+        return this.healthValue > 0;
+    }
 }
