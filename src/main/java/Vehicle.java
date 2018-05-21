@@ -11,5 +11,9 @@ public abstract class Vehicle {
         this.healthValue -= damageValue;
     }
 
+    public int getHealthValue() {
+        return this.healthValue;
+    }
+
     public abstract void attack(Kaiju kaiju);
 }

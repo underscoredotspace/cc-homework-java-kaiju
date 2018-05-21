@@ -30,4 +30,8 @@ public abstract class Kaiju {
     public boolean isAlive() {
         return this.healthValue > 0;
     }
+
+    public int getHealthValue() {
+        return this.healthValue;
+    }
 }

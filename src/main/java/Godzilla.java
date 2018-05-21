@@ -1,6 +1,6 @@
 public class Godzilla extends Kaiju {
     Godzilla() {
-        super("ゴジラ", 200, 20);
+        super("ゴジラ", 200, 50);
     }
 
     @Override

@@ -36,4 +36,11 @@ public class GodzillaTest {
     public void move() {
         assertEquals("*Stomp stomp*", gojira.move());
     }
+
+    @Test
+    public void canAttack() {
+        Tank tank = new Tank();
+        gojira.attack(tank);
+        assertEquals(200, tank.getHealthValue());
+    }
 }
